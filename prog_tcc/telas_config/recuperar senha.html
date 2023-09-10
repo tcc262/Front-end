@@ -1,0 +1,128 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <title>Recuperar Senha - Site de Monitoria</title>
+  <style>
+     body {
+      font-family: Arial, sans-serif;
+      background-color: #BCC1C8;
+      margin: 0;
+      padding: 0;
+    }
+    .header {
+      background-color: #021137;
+      color: #fff;
+      padding: 10px 20px;
+      text-align: center;
+      display: flex;
+      align-items: center;
+      justify-content: space-between;
+      position: fixed;
+      top: 0;
+      left: 0;
+      width: 100%;
+    }
+
+    .logo {
+      align-self: flex-start;
+      width: 60px;
+    }
+
+    .menu {
+      display: flex;
+      align-items: center;
+      cursor: pointer;
+    }
+
+    .menu-icon {
+      color: #fff;
+      font-size: 20px;
+      margin-right: 25px;
+    }
+    .container {
+      max-width: 500px;
+      background-color: #9097A2;
+      margin: 160px auto 0; /* Updated margin-top value */
+      padding: 20px;
+      border-radius: 5px;
+      box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+    }
+    
+    
+    h2 {
+      text-align: center;
+      margin-top: 0;
+    }
+    
+    .form-group {
+      margin-bottom: 20px;
+    }
+    
+    .form-group label {
+      display: block;
+      font-weight: bold;
+      margin-bottom: 5px;
+    }
+    
+    .form-group input[type="email"] {
+      width: 100%;
+      padding: 10px;
+      border-radius: 3px;
+      border: 1px solid #ddd;
+    }
+    
+    .form-group input[type="submit"] {
+      background-color: #F44D05;
+      color: #fff;
+      border: none;
+      padding: 10px 20px;
+      border-radius: 3px;
+      cursor: pointer;
+      margin: 0 auto;
+      display: block;
+    }
+    
+    .form-group input[type="submit"]:hover {
+      background-color: #F44D05;
+    }
+    .header-icons {
+      display: flex;
+      align-items: center;
+    }
+
+    .header-icons img {
+      width: 25px;
+      height: 25px;
+      margin-right: 40px;
+    }
+  </style>
+</head>
+<body>
+  <header class="header">
+    <div class="logo">
+      <img src="C:\Users\ramos\OneDrive\Área de Trabalho\prog_tcc\imgs\logo.png" alt="Logo do Site" width="80px">
+    </div>
+    <h1 class="header-text">SMA</h1>
+    <div class="header-icons">
+      <a href="C:\Users\ramos\OneDrive\Área de Trabalho\prog_tcc\telas_iniciais\tela inicial.html"><img src="C:\Users\ramos\OneDrive\Área de Trabalho\prog_tcc\imgs\casa.png" alt="Ícone de Casa"></a>
+    </div>
+  </header>
+
+  <div class="container">
+    <h2>Recuperar Senha</h2>
+    <form action="processar_recuperacao_senha.php" method="POST">
+      <div class="form-group">
+        <label for="email">E-mail:</label>
+        <input type="email" id="email" name="email" required>
+      </div>
+      <div class="form-group">
+        <label for="email">Matricula:</label>
+        <input type="email" id="email" name="email" required>
+      </div>
+      <div class="form-group">
+        <input type="submit" value="Recuperar Senha">
+      </div>
+    </form>
+  </div>
+</body>
+</html>

@@ -1,0 +1,247 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+  <meta charset="UTF-8">
+  <title>SMA - Sistema de Monitoria Acadêmico</title>
+  <style>
+    body {
+      margin: 0;
+      padding: 0;
+      font-family: Arial, sans-serif;
+    }
+    
+    .header {
+      background-color: #021137;
+      color: #fff;
+      padding: 30px 20px;
+      text-align: center;
+      display: flex;
+      align-items: center;
+      justify-content: space-between;
+      height: 70px; /* Adjust the height as needed */
+    }
+
+    .logo {
+      align-self: flex-end;
+      width: 60px; /* Adjust the width as needed */
+    }
+
+    .menu {
+      display: flex;
+      align-items: center;
+      cursor: pointer;
+    }
+
+    .menu-icon {
+      color: #fff;
+      font-size: 20px;
+      margin-right: 5px;
+    }
+
+    .dropdown {
+      position: relative;
+    }
+
+    .dropdown-content {
+      display: none;
+      position: absolute;
+      background-color: #BCC1C8;
+      min-width: 160px;
+      box-shadow: 0 2px 4px rgba(0, 0, 0, 0.2);
+      z-index: 1;
+    }
+
+    .dropdown-content a {
+      color: #021137;
+      padding: 12px 16px;
+      text-decoration: none;
+      display: block;
+    }
+
+    .dropdown-content a:hover {
+      background-color: #ddd;
+    }
+
+    .dropdown.clicked .dropdown-content {
+      display: block;
+    }
+
+    .container {
+      max-width: 800px;
+      margin: 0 auto;
+      padding: 40px 20px;
+      text-align: center;
+    }
+
+    .feature {
+      border: 3px solid orange;
+    }
+
+    h1 {
+      font-size: 36px;
+      margin-bottom: 20px;
+    }
+
+    h2 {
+      font-size: 24px;
+      margin-bottom: 30px;
+    }
+
+    p {
+      font-size: 18px;
+      line-height: 1.6;
+      margin-bottom: 30px;
+    }
+
+    .cta-button {
+      display: inline-block;
+      background-color: #021137;
+      color: #BCC1C8;
+      padding: 12px 24px;
+      font-size: 20px;
+      text-decoration: none;
+      border-radius: 4px;
+      transition: background-color 0.3s ease;
+    }
+
+    .cta-button:hover {
+      background-color: #1a5276;
+    }
+
+    .features {
+      display: flex;
+      justify-content: center;
+      margin-top: 60px;
+    }
+
+    .feature {
+      flex: 1;
+      margin: 0 20px;
+      padding: 20px;
+      background-color: #BCC1C8;
+      border-radius: 8px;
+      box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+      transition: transform 0.3s ease;
+    }
+
+    .feature:hover {
+      transform: translateY(-5px);
+    }
+
+    .feature-icon {
+      font-size: 48px;
+      margin-bottom: 20px;
+    }
+
+    .feature-title {
+      font-size: 24px;
+      margin-bottom: 10px;
+    }
+
+    .feature-description {
+      font-size: 16px;
+    }
+
+    .submenu-content {
+      display: none;
+      background-color: #BCC1C8;
+      min-width: 160px;
+      box-shadow: 0 2px 4px rgba(0, 0, 0, 0.2);
+      z-index: 1;
+      position: absolute;
+    }
+
+    .submenu-content a {
+      color: #021137;
+      padding: 12px 16px;
+      text-decoration: none;
+      display: block;
+    }
+
+    .submenu-content a:hover {
+      background-color: #BCC1C8;
+    }
+
+    .dropdown.clicked .submenu-content {
+      display: block;
+    }
+
+    .configuration-menu {
+      display: none;
+      position: absolute;
+      top: 40px;
+      right: 0;
+      background-color: #BCC1C8;
+      min-width: 160px;
+      box-shadow: 0 2px 4px rgba(0, 0, 0, 0.2);
+      z-index: 1;
+    }
+
+    .configuration-menu a {
+      color: #021137;
+      padding: 12px 16px;
+      text-decoration: none;
+      display: block;
+    }
+
+    .configuration-menu a:hover {
+      background-color: #ddd;
+    }
+  </style> 
+</head>
+
+<body>
+  <header class="header">
+    <div class="menu" onclick="toggleDropdown()">
+      <div class="dropdown cadastro-dropdown">
+        <div class="menu-icon"><img src="C:\Users\ramos\OneDrive\Área de Trabalho\prog_tcc\imgs\logo.png" alt="Logo do Site" width="90px"></div>
+        
+      </div>
+    </div>
+    <h1>SMA</h1>
+    <div class="logo">
+      <img src="C:\Users\ramos\OneDrive\Área de Trabalho\prog_tcc\imgs\config.png" alt="Ícone de Configurações" width="80px" onclick="showConfiguration(event)">
+      <div class="configuration-menu" id="configuration-menu">
+          <a href="C:\Users\ramos\OneDrive\Área de Trabalho\prog_tcc\telas_cadastro\cadastro.html" onclick="toggleSubMenu()">Cadastro</a>
+          <a href="C:\Users\ramos\OneDrive\Área de Trabalho\prog_tcc\telas_iniciais\sobre nos.html">Sobre Nós</a>
+          <a href="C:\Users\ramos\OneDrive\Área de Trabalho\prog_tcc\telas_iniciais\entrar.html">Entrar</a>
+        </div>
+    </div>
+  </header>
+
+  <div class="container">
+    <div class="features">
+      <div class="feature">
+        <i class="feature-icon">📚</i>
+        <h2 class="feature-title">Acompanhamento Personalizado</h2>
+        <p class="feature-description">Nossos monitores dedicados oferecem apoio individualizado para auxiliá-lo em seus estudos e responder suas dúvidas.</p>
+      </div>
+
+      <div class="feature">
+        <i class="feature-icon">💡</i>
+        <h2 class="feature-title">Variedade de Matérias</h2>
+        <p class="feature-description">Cobrimos uma ampla gama de disciplinas acadêmicas, desde matemática e ciências até literatura e história.</p>
+      </div>
+
+      <div class="feature">
+        <i class="feature-icon">📆</i>
+        <h2 class="feature-title">Horários Flexíveis</h2>
+        <p class="feature-description">Oferecemos horários flexíveis de monitoria para se adequar à sua agenda, garantindo que você receba o suporte necessário quando precisar.</p>
+      </div>
+    </div>
+  </div>
+
+  <script>
+    
+    function showConfiguration(event) {
+      event.stopPropagation();
+      const configurationMenu = document.querySelector('.configuration-menu');
+      configurationMenu.style.display = configurationMenu.style.display === 'none' ? 'block' : 'none';
+    }
+
+    
+  </script>
+</body>
+
+</html>

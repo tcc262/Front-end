@@ -1,0 +1,135 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <title>Página de Entrada</title>
+  <style>
+   body {
+      font-family: Arial, sans-serif;
+      background-color: #BCC1C8;
+      margin: 0;
+      padding: 0;
+    }
+    
+    .header {
+      background-color: #021137;
+      color: #fff;
+      padding: 10px 20px;
+      text-align: center;
+      display: flex;
+      align-items: center;
+      justify-content: space-between;
+      position: fixed;
+      top: 0;
+      left: 0;
+      width: 100%;
+    }
+
+    .logo {
+      align-self: flex-start;
+      width: 60px;
+    }
+
+    .menu {
+      display: flex;
+      align-items: center;
+      cursor: pointer;
+    }
+
+    .menu-icon {
+      color: #fff;
+      font-size: 20px;
+      margin-right: 25px;
+    }
+
+    .container {
+      max-width: 500px;
+      background-color: #9097A2;
+      margin: 0 auto;
+      padding: 20px;
+      border-radius: 5px;
+      box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+      margin-top: 150px; /* Adiciona um espaço de 80px entre o cabeçalho e o conteúdo */
+    }
+
+    .container h2 {
+      text-align: center;
+      margin-bottom: 20px;
+    }
+
+    .form-group {
+      margin-bottom: 15px;
+    }
+
+    .form-group label {
+      display: block;
+      margin-bottom: 5px;
+    }
+
+    .form-group input[type="email"],
+    .form-group input[type="password"] {
+      width: 100%;
+      padding: 8px;
+      border: 1px solid #ccc;
+      border-radius: 4px;
+    }
+
+    .form-group input[type="submit"] {
+      width: 100%;
+      padding: 10px;
+      border: none;
+      background-color: #f36d1e;
+      color: #ffffff;
+      font-size: 16px;
+      cursor: pointer;
+      border-radius: 4px;
+    }
+
+    .form-group .forgot-password {
+      margin-top: 10px;
+      text-align: center;
+    }
+
+    .header-icons {
+      display: flex;
+      align-items: center;
+    }
+
+    .header-icons img {
+      width: 25px;
+      height: 25px;
+      margin-right: 40px;
+    }
+  </style>
+</head>
+<body>
+  <header class="header">
+    <div class="logo">
+      <img src="C:\Users\ramos\OneDrive\Área de Trabalho\prog_tcc\imgs\logo.png" alt="Logo do Site" width="80px">
+    </div>
+    <h1 class="header-text">SMA</h1>
+    <div class="header-icons">
+      <a href="C:\Users\ramos\OneDrive\Área de Trabalho\prog_tcc\telas_iniciais\tela inicial.html"><img src="C:\Users\ramos\OneDrive\Área de Trabalho\prog_tcc\imgs\casa.png" alt="Ícone de Casa"></a>
+    </div>
+  </header>
+
+  <div class="container">
+    <h2>Entrar</h2>
+    <form>
+      <div class="form-group">
+        <label for="email">Email:</label>
+        <input type="email" id="email" name="email" required>
+      </div>
+      <div class="form-group">
+        <label for="password">Senha:</label>
+        <input type="password" id="password" name="password" required>
+      </div>
+      <div class="form-group">
+        <input type="submit" value="Entrar">
+      </div>
+    </form>
+    <div class="form-group forgot-password">
+      <a href="C:\Users\ramos\OneDrive\Área de Trabalho\prog_tcc\telas_config\recuperar senha.html">Recuperar senha</a>
+    </div>
+  </div>
+</body>
+</html>

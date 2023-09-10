@@ -1,0 +1,287 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <title>Página do Aluno</title>
+  <style>
+    /* Estilos básicos */
+    body {
+      font-family: Arial, sans-serif;
+      background-color: #BCC1C8;
+      margin: 0;
+      padding: 0;
+    }
+  
+    .header {
+      background-color: #021137;
+      color: #fff;
+      padding: 10px 20px;
+      text-align: center;
+      display: flex;
+      align-items: center;
+      justify-content: space-between;
+      position: fixed;
+      top: 0;
+      left: 0;
+      width: 100%;
+    }
+
+    .logo {
+      align-self: flex-start;
+      width: 60px;
+    }
+
+    .menu {
+      display: flex;
+      align-items: center;
+      cursor: pointer;
+    }
+
+    .menu-icon {
+      color: #fff;
+      font-size: 20px;
+      margin-right: 25px;
+    }
+
+    .areas-wrapper {
+    display: flex;
+    flex-wrap: nowrap;
+    align-items: flex-start;
+    padding: 10px;
+    justify-content: space-between;
+  }
+
+  .quadro {
+    margin-top: 150px;
+    margin-bottom: 20px;
+    margin-left: 10px;
+    margin-right: 10px;
+    background-color: #f4f4f4;
+    padding: 10px;
+    border-radius: 5px;
+    border: 2px solid orange;
+    width: 200px; /* Defina um tamanho fixo para os quadrados */
+  }
+
+    
+
+    .quadro h2 {
+      text-align: center;
+    }
+
+    .quadro ul {
+      list-style-type: none;
+      padding: 0;
+    }
+
+    .quadro li {
+      margin-bottom: 10px;
+    }
+
+    .pagination {
+      text-align: center;
+      margin-top: 20px;
+    }
+
+    .pagination button {
+      padding: 10px 20px;
+      background-color: #021137;
+      color: #fff;
+      border: none;
+      border-radius: 5px;
+      cursor: pointer;
+      margin-right: 10px;
+    }
+
+    .arrow-button {
+      background-color: #021137;
+      color: #fff;
+      border: none;
+      border-radius: 50%;
+      padding: 5px;
+      font-size: 20px;
+      cursor: pointer;
+    }
+
+    .arrow-button:hover {
+      background-color: #012764;
+    }
+
+    .arrow-button:disabled {
+      opacity: 0.5;
+      cursor: not-allowed;
+    }
+
+    .search-bar {
+      text-align: center;
+      margin-top: 20px;
+    }
+
+    .search-bar input {
+      padding: 10px;
+      width: 300px;
+    }
+
+    .areas-container {
+      display: flex;
+      flex-wrap: nowrap;
+      overflow-x: scroll;
+      margin: 0 auto;
+      width: 100%;
+      overflow-x: hidden;
+    }
+    .search-bar {
+    text-align: center;
+    margin-top: 20px;
+    margin-bottom: 20px; /* Adicione essa linha para definir a margem inferior */
+  }
+
+  .search-bar input {
+    padding: 10px;
+    width: 900px; /* Aumentar a largura desejada */
+  }
+  
+  .header-icons {
+      display: flex;
+      align-items: center;
+    }
+
+    .header-icons img {
+      width: 40px;
+      height: 40px;
+      margin-right: 20px;
+    }
+  </style>
+</head>
+<body>
+  <header class="header">
+    <img class="logo" src="C:\Users\ramos\OneDrive\Área de Trabalho\prog_tcc\imgs\logo.png" alt="Logo">
+    <h1>SMA</h1>
+    <div class="header-icons">
+      <!--<a href="C:\Users\ramos\OneDrive\Área de Trabalho\prog_tcc\chat aluno.html"><img src="chat.png" alt="Ícone de Chat"></a>-->
+      <a href="C:\Users\ramos\OneDrive\Área de Trabalho\prog_tcc\telas_config\cinfiguraçoes aluno.html"><img src="C:\Users\ramos\OneDrive\Área de Trabalho\prog_tcc\imgs\config.png" alt="Ícone de Configurações"></a>
+      <a href="C:\Users\ramos\OneDrive\Área de Trabalho\prog_tcc\telas_usuários\perfil aluno.html"><img src="C:\Users\ramos\OneDrive\Área de Trabalho\prog_tcc\imgs\perfil.png" alt="Ícone de perfil"></a>
+    </div>
+  </header>
+
+  <div class="areas-container">
+    <div class="areas-wrapper">
+      <div class="quadro"style="width: 260px; height: 325px;">
+        <h2>Ciências Exatas e da Terra</h2>
+        <ul>
+          <li>Matemática</li>
+          <li>Física</li>
+          <li>Química</li>
+          <li>Probabilidade e estatística</li>
+          <li>Ciência da computação</li>
+          <li>Astronomia</li>
+          <li>Geociências</li>
+          <li>Oceanografia</li>
+        </ul>
+      </div>
+
+      <div class="quadro"style="width: 260px; height: 325px;">
+        <h2>Ciências Biológicas</h2>
+        <ul>
+          <li>Biologia Celular</li>
+          <li>Biologia Molecular</li>
+          <li>Genética</li>
+          <li>Botânica</li>
+          <li>Zoologia</li>
+          <li>Ecologia</li>
+        </ul>
+      </div>
+
+      <div class="quadro"style="width: 260px; height: 325px;">
+        <h2>Engenharia</h2>
+        <ul>
+          <li>Engenharia Civil</li>
+          <li>Engenharia Elétrica</li>
+          <li>Engenharia Mecânica</li>
+          <li>Engenharia de Produção</li>
+          <li>Engenharia Química</li>
+          <li>Engenharia de Computação</li>
+        </ul>
+      </div>
+
+      <div class="quadro"style="width: 260px; height: 325px;">
+        <h2>Ciências da Saúde</h2>
+        <ul>
+          <li>Medicina</li>
+          <li>Odontologia</li>
+          <li>Farmácia</li>
+          <li>Enfermagem</li>
+          <li>Nutrição</li>
+          <li>Fisioterapia</li>
+        </ul>
+      </div>
+
+      <div class="quadro"style="width: 260px; height: 325px;">
+        <h2>Ciências Agrárias</h2>
+        <ul>
+          <li>Agronomia</li>
+          <li>Zootecnia</li>
+          <li>Engenharia Florestal</li>
+          <li>Medicina Veterinária</li>
+          <li>Tecnologia de Alimentos</li>
+        </ul>
+      </div>
+
+      <div class="quadro"style="width: 260px; height: 325px;">                
+        <h2>Ciências Sociais Aplicadas</h2>
+        <ul>
+          <li>Administração</li>
+          <li>Economia</li>
+          <li>Direito</li>
+          <li>Ciências Contábeis</li>
+          <li>Relações Internacionais</li>
+        </ul>
+      </div>
+
+      <div class="quadro"style="width: 260px; height: 325px;">
+        <h2>Ciências Humanas</h2>
+        <ul>
+          <li>História</li>
+          <li>Geografia</li>
+          <li>Filosofia</li>
+          <li>Sociologia</li>
+          <li>Antropologia</li>
+        </ul>
+      </div>
+
+      <div class="quadro"style="width: 260px; height: 325px;">
+        <h2>Linguística, Letras e Artes</h2>
+        <ul>
+          <li>Letras</li>
+          <li>Artes Cênicas</li>
+          <li>Artes Visuais</li>
+          <li>Música</li>
+          <li>Design</li>
+        </ul>
+      </div>
+    </div>
+  </div>
+
+  <div class="pagination">
+    <button class="arrow-button" onclick="scrollLeft()">&#8249;</button>
+    <button class="arrow-button" onclick="scrollRight()">&#8250;</button>
+  </div>
+
+  <script>
+    function scrollLeft() {
+      document.querySelector('.areas-container').scrollBy(-200, 0);
+    }
+
+    function scrollRight() {
+      document.querySelector('.areas-container').scrollBy(200, 0);
+    }
+
+    function toggleDropdown() {
+      // Função para mostrar/ocultar o menu dropdown
+    }
+  </script>
+  <div class="search-bar">
+    <input type="text" placeholder="Pesquisar...">
+  </div>
+
+</body>
+</html>

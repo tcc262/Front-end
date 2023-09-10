@@ -1,0 +1,149 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+  <meta charset="UTF-8">
+  <title>Cadastro - SMA</title>
+  <style>
+    body {
+        font-family: Arial, sans-serif;
+      background-color: #BCC1C8;
+      margin: 0;
+      padding: 0;
+    }
+
+    .header {
+      background-color: #021137;
+      color: #fff;
+      padding: 20px 20px;
+      text-align: center;
+      display: flex;
+      align-items: center;
+      justify-content: space-between;
+    }
+
+    .logo {
+        align-self: flex-start;
+      width: 60px;
+    }
+
+    .header-text {
+      font-size: 30px;
+      flex-grow: 1;
+      text-align: center;
+    }
+
+    h1 {
+      font-size: 36px;
+      margin-bottom: 20px;
+    }
+
+    .container {
+      max-width: 800px;
+      margin: 80px auto 0;
+      padding: 40px 20px;
+      text-align: center;
+    }
+
+    h2 {
+      font-size: 24px;
+      margin-bottom: 30px;
+    }
+
+    .options {
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+    }
+
+    .option {
+      margin-bottom: 20px;
+    }
+
+    .option a {
+      display: inline-block;
+      background-color: #021137;
+      color: #BCC1C8;
+      padding: 12px 24px;
+      font-size: 20px;
+      text-decoration: none;
+      border-radius: 4px;
+      transition: background-color 0.3s ease;
+    }
+
+    .option a:hover {
+      background-color: #1a5276;
+    }
+
+    .disclaimer {
+      font-size: 14px;
+      color: #777;
+      margin-bottom: 20px;
+    }
+
+    .consent-label {
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      margin-bottom: 10px;
+    }
+
+    .consent-checkbox {
+      margin-right: 10px;
+    }
+    .header-icons {
+      display: flex;
+      align-items: center;
+    }
+
+    .header-icons img {
+      width: 25px;
+      height: 25px;
+      margin-right: 40px;
+    }
+  </style>
+</head>
+
+<body>
+  <header class="header">
+    <img class="logo" src="C:\Users\ramos\OneDrive\Área de Trabalho\prog_tcc\imgs\logo.png" alt="Logo">
+    <h1 class="header-text">SMA</h1>
+    <div class="header-icons">
+        <a href="C:\Users\ramos\OneDrive\Área de Trabalho\prog_tcc\tela inicial.html"><img src="C:\Users\ramos\OneDrive\Área de Trabalho\prog_tcc\imgs\casa.png" alt="Ícone de Casa"></a>
+      </div>
+    </header>
+
+
+  <div class="container">
+    <div class="disclaimer">
+      <p>Ao prosseguir com o cadastro, você concorda que os direitos autorais das informações fornecidas serão utilizados para fins acadêmicos e de monitoria.</p>
+    </div>
+
+    <div class="consent-label">
+      <input type="checkbox" class="consent-checkbox" id="consent-checkbox">
+      <label for="consent-checkbox">Concordo com os termos de uso e autorizo o uso dos direitos autorais.</label>
+    </div>
+
+    <div class="options">
+      <h2>Escolha o tipo de cadastro:</h2>
+      <div class="option">
+        <a href="C:\Users\ramos\OneDrive\Área de Trabalho\prog_tcc\telas_cadastro\cadastro aluno.html" onclick="checkConsent()">Aluno</a>
+      </div>
+      <div class="option">
+        <a href="C:\Users\ramos\OneDrive\Área de Trabalho\prog_tcc\telas_cadastro\cadastro monitor.html" onclick="checkConsent()">Monitor</a>
+      </div>
+    </div>
+  </div>
+
+  <script>
+    function checkConsent() {
+      var consentCheckbox = document.getElementById('consent-checkbox');
+      if (!consentCheckbox.checked) {
+        alert("Você precisa concordar com os termos de uso e autorizar o uso dos direitos autorais.");
+        event.preventDefault();
+      }
+    }
+  </script>
+</body>
+
+</html>

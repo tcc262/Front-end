@@ -1,0 +1,282 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <title>Meu Quadro</title>
+  <style>
+    body {
+      font-family: Arial, sans-serif;
+      background-color: #BCC1C8;
+      margin: 0;
+      padding: 0;
+    }
+  
+    
+    .header {
+      background-color: #021137;
+      color: #fff;
+      padding: 10px 20px;
+      text-align: center;
+      display: flex;
+      align-items: center;
+      justify-content: space-between;
+      position: fixed;
+      top: 0;
+      left: 0;
+      width: 100%;
+    }
+
+    .logo {
+      align-self: flex-start;
+      width: 60px;
+    }
+
+    .menu {
+      display: flex;
+      align-items: center;
+      cursor: pointer;
+    }
+
+    .menu-icon {
+      color: #fff;
+      font-size: 20px;
+      margin-right: 25px;
+    }
+    
+      .quadradinho {
+  width: 200px;
+  height: 200px;
+  border: 1px dashed blue;
+  float: left;
+  margin: 10px;
+  padding: 10px;
+  background-color: white;
+}
+
+.quadradinho h2 {
+  font-size: 20px;
+  font-weight: bold;
+  margin: 0;
+  padding: 10px;
+  background-color: rgb(119, 128, 0);
+  color: white;
+  text-align: center;
+}
+   
+    .logo {
+      width: 50px;
+      height: 50px;
+    }
+
+    .profile {
+      display: flex;
+      align-items: center;
+    }
+
+    .profile img {
+      width: 40px;
+      height: 40px;
+      border-radius: 50%;
+      margin-right: 10px;
+      cursor: pointer;
+    }
+
+    .profile-info {
+      color: #333333;
+    }
+
+    .profile-name {
+      font-size: 18px;
+      font-weight: bold;
+      margin-bottom: 5px;
+    }
+
+    .profile-email {
+      font-size: 14px;
+      color: #9097A2;
+      margin-bottom: 10px;
+    }
+
+    .profile-description {
+      font-size: 14px;
+      color: #9097A2;
+    }
+
+    .container {
+      max-width: 900px;
+      margin: 0 auto;
+      padding: 20px;
+      display: flex;
+      justify-content: space-between;
+      align-items: flex-start;
+      margin-top: 150px; /* Adiciona uma margem superior para dar espaço ao conteúdo abaixo do cabeçalho */
+    }
+
+    .card-profile {
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      padding: 20px;
+      background-color:#9097A2;
+      border-radius: 5px;
+      box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+      margin-bottom: 20px;
+      width: 400px;
+    }
+
+    .profile-image {
+      width: 150px;
+      height: 150px;
+      border-radius: 50%;
+      margin-bottom: 20px;
+    }
+
+    .profile-info p {
+      margin-bottom: 10px;
+    }
+
+    .board {
+      display: flex;
+      flex-wrap: nowrap;
+    }
+
+    .card {
+      margin-bottom: 10px;
+      padding: 10px;
+      border-radius: 5px;
+      background-color: #848da5;
+    }
+
+    .card-title {
+      font-size: 16px;
+      color: #0e0e0e;
+      margin-bottom: 5px;
+      font-weight: bold;
+    }
+
+    .card-description {
+      font-size: 14px;
+      color: #ffffff;
+    }
+
+    .header-icons {
+      display: flex;
+      align-items: center;
+    }
+
+    .header-icons img {
+      width: 25px;
+      height: 25px;
+      margin-right: 5px;
+    }
+      
+  .header-icons {
+      display: flex;
+      align-items: center;
+    }
+
+    .header-icons img {
+      width: 40px;
+      height: 40px;
+      margin-right: 20px;
+    }
+  </style>
+</head>
+<body>
+    <header class="header">
+        <img class="logo" src="C:\Users\ramos\OneDrive\Área de Trabalho\prog_tcc\imgs\logo.png" alt="Logo">
+        <h1>SMA</h1>
+        <div class="header-icons">
+          <!--<a href="C:\Users\ramos\OneDrive\Área de Trabalho\prog_tcc\chat monitor.html"><img src="chat.png" alt="Ícone de Chat"></a>-->
+          <a href="C:\Users\ramos\OneDrive\Área de Trabalho\prog_tcc\telas_config\configuraçoes monitor.html"><img src="C:\Users\ramos\OneDrive\Área de Trabalho\prog_tcc\imgs\config.png" alt="Ícone de Configurações"></a>
+          <a href="C:\Users\ramos\OneDrive\Área de Trabalho\prog_tcc\telas_usuários\perfil monitor.html"><img src="C:\Users\ramos\OneDrive\Área de Trabalho\prog_tcc\imgs\perfil.png" alt="Ícone de perfil"></a>
+        </div>
+      </header>
+    
+  <h1>Exatas</h1>
+    <div class="quadradinho"style="width: 260px; height: 260px;">
+    <h2>Matemática</h2>
+    <ul>
+        <li>Álgebra</li>
+        <li>Análise</li>
+        <li>Geometria e Topologia</li>
+        <li>Matemática Aplicada</li>
+    </ul>
+</div>
+
+<div class="quadradinho"style="width: 260px; height: 260px;">
+    <h2>Probabilidade e Estatística</h2>
+    <ul>
+        <li>Probabilidade</li>
+        <li>Estatística</li>
+        <li>Probabilidade e Estatística Aplicadas</li>
+    </ul>
+</div>
+
+<div class="quadradinho" style="width: 260px; height: 260px;">
+    <h2>Ciência da Computação</h2>
+    <ul>
+        <li>Teoria da Computação</li>
+        <li>Matemática da Computação</li>
+        <li>Metodologia e Técnicas da Computação</li>
+        <li>Sistemas de Computação</li>
+    </ul>
+</div>
+
+<div class="quadradinho" style="width: 260px; height: 260px;">
+    <h2>Astronomia</h2>
+    <ul>
+        <li>Astronomia de Posição e Mecânica Celeste</li>
+        <li>Astrofísica Estelar</li>
+        <li>Astrofísica do Meio Interestelar</li>
+        <li>Astrofísica Extragaláctica</li>
+        <li>Astrofísica do Sistema Solar</li>
+        <li>Instrumentação Astronômica</li>
+    </ul>
+</div>
+
+<div class="quadradinho" style="width: 260px; height: 280px;">
+    <h2>Física</h2>
+    <ul>
+        <li>Física Geral</li>
+        <li>Áreas Clássicas de Fenomenologia e suas Aplicações</li>
+        <li>Física das Partículas Elementares e Campos</li>
+        <li>Física Nuclear</li>
+        <li>Física Atômica e Molecular</li>
+        <li>Física dos Fluídos, Física de Plasmas e Descargas Elétricas</li>
+        <li>Física da Matéria Condensada</li>
+    </ul>
+</div>
+
+<div class="quadradinho"style="width: 260px; height: 260px;">
+    <h2>Química</h2>
+    <ul>
+        <li>Química Orgânica</li>
+        <li>Química Inorgânica</li>
+        <li>Físico-Química</li>
+        <li>Química Analítica</li>
+    </ul>
+</div>
+
+<div class="quadradinho"style="width: 260px; height: 260px;">
+    <h2>Geociências</h2>
+    <ul>
+        <li>Geologia</li>
+        <li>Geofísica</li>
+        <li>Meteorologia</li>
+        <li>Geodésia</li>
+        <li>Geografia Física</li>
+    </ul>
+</div>
+
+<div class="quadradinho"style="width: 260px; height: 260px;">
+    <h2>Oceanografia</h2>
+    <ul>
+        <li>Oceanografia Biológica</li>
+        <li>Oceanografia Física</li>
+        <li>Oceanografia Química</li>
+        <li>Oceanografia Geológica</li>
+    </ul>
+</div>
+
+</body>
+</html>

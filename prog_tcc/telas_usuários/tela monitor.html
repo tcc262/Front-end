@@ -1,0 +1,1110 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <title>Meu Quadro</title>
+  <style>
+    body {
+      font-family: Arial, sans-serif;
+      background-color: #BCC1C8;
+      margin: 0;
+      padding: 0;
+    }
+  
+    .header {
+      background-color: #021137;
+      color: #fff;
+      padding: 10px 20px;
+      text-align: center;
+      display: flex;
+      align-items: center;
+      justify-content: space-between;
+      position: fixed;
+      top: 0;
+      left: 0;
+      width: 100%;
+    }
+
+    .logo {
+      align-self: flex-start;
+      width: 60px;
+    }
+
+    .menu {
+      display: flex;
+      align-items: center;
+      cursor: pointer;
+    }
+
+    .menu-icon {
+      color: #fff;
+      font-size: 20px;
+      margin-right: 25px;
+    }
+    .quadradinho-container {
+        display: flex;
+      }
+      .quadradinho {
+  width: 200px;
+  height: 200px;
+  border: 1px dashed blue;
+  float: left;
+  margin: 10px;
+  padding: 10px;
+  background-color: white;
+}
+
+.quadradinho h2 {
+  font-size: 20px;
+  font-weight: bold;
+  margin: 0;
+  padding: 10px;
+  background-color: rgb(119, 128, 0);
+  color: white;
+  text-align: center;
+}
+    .quadradinho1 {
+        width: 200px;
+        height: 200px;
+        border: 1px dashed blue;
+        float: left;
+        margin: 10px;
+        padding: 10px;
+        background-color: white;
+    }
+
+    .quadradinho1 h2 {
+        font-size: 20px;
+        font-weight: bold;
+        margin: 0;
+        padding: 10px;
+        background-color: rgb(102, 0, 128);
+        color: white;
+        text-align: center;
+    }
+    .quadradinho2 {
+        width: 200px;
+        height: 200px;
+        border: 1px dashed blue;
+        float: left;
+        margin: 10px;
+        padding: 10px;
+        background-color: white;
+    }
+
+    .quadradinho2 h2 {
+        font-size: 20px;
+        font-weight: bold;
+        margin: 0;
+        padding: 10px;
+        background-color: rgb(0, 113, 128);
+        color: white;
+        text-align: center;
+    }
+    .quadradinho3 {
+        width: 200px;
+        height: 200px;
+        border: 1px dashed blue;
+        float: left;
+        margin: 10px;
+        padding: 10px;
+        background-color: white;
+    }
+
+    .quadradinho3 h2 {
+        font-size: 20px;
+        font-weight: bold;
+        margin: 0;
+        padding: 10px;
+        background-color: rgb(128, 0, 32);
+        color: white;
+        text-align: center;
+    }
+    .quadradinho4 {
+        width: 200px;
+        height: 200px;
+        border: 1px dashed blue;
+        float: left;
+        margin: 10px;
+        padding: 10px;
+        background-color: white;
+    }
+
+    .quadradinho4 h2 {
+        font-size: 20px;
+        font-weight: bold;
+        margin: 0;
+        padding: 10px;
+        background-color: rgb(128, 0, 128);
+        color: white;
+        text-align: center;
+    }
+    .quadradinho5 {
+        width: 200px;
+        height: 200px;
+        border: 1px dashed blue;
+        float: left;
+        margin: 10px;
+        padding: 10px;
+        background-color: white;
+    }
+
+    .quadradinho5 h2 {
+        font-size: 20px;
+        font-weight: bold;
+        margin: 0;
+        padding: 10px;
+        background-color: rgb(0, 102, 128);
+        color: white;
+        text-align: center;
+    }
+    .quadradinho6 {
+        width: 200px;
+        height: 200px;
+        border: 1px dashed blue;
+        float: left;
+        margin: 10px;
+        padding: 10px;
+        background-color: white;
+    }
+
+    .quadradinho6 h2 {
+        font-size: 20px;
+        font-weight: bold;
+        margin: 0;
+        padding: 10px;
+        background-color: rgb(216, 98, 56);
+        color: white;
+        text-align: center;
+    }
+    .quadradinho7 {
+        width: 200px;
+        height: 200px;
+        border: 1px dashed blue;
+        float: left;
+        margin: 10px;
+        padding: 10px;
+        background-color: white;
+    }
+
+    .quadradinho7 h2 {
+        font-size: 20px;
+        font-weight: bold;
+        margin: 0;
+        padding: 10px;
+        background-color: green;
+        color: white;
+        text-align: center;
+    }
+    .logo {
+      width: 50px;
+      height: 50px;
+    }
+
+    .profile {
+      display: flex;
+      align-items: center;
+    }
+
+    .profile img {
+      width: 40px;
+      height: 40px;
+      border-radius: 50%;
+      margin-right: 10px;
+      cursor: pointer;
+    }
+
+    .profile-info {
+      color: #333333;
+    }
+
+    .profile-name {
+      font-size: 18px;
+      font-weight: bold;
+      margin-bottom: 5px;
+    }
+
+    .profile-email {
+      font-size: 14px;
+      color: #9097A2;
+      margin-bottom: 10px;
+    }
+
+    .profile-description {
+      font-size: 14px;
+      color: #9097A2;
+    }
+
+    .container {
+      max-width: 900px;
+      margin: 0 auto;
+      padding: 20px;
+      display: flex;
+      justify-content: space-between;
+      align-items: flex-start;
+    }
+
+    .card-profile {
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      padding: 20px;
+      background-color:#9097A2;
+      border-radius: 5px;
+      box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+      margin-bottom: 20px;
+      width: 400px;
+    }
+
+    .profile-image {
+      width: 150px;
+      height: 150px;
+      border-radius: 50%;
+      margin-bottom: 20px;
+    }
+
+    .profile-info p {
+      margin-bottom: 10px;
+    }
+
+    .board {
+      display: flex;
+      flex-wrap: nowrap;
+    }
+
+    .card {
+      margin-bottom: 10px;
+      padding: 10px;
+      border-radius: 5px;
+      background-color: #848da5;
+    }
+
+    .card-title {
+      font-size: 16px;
+      color: #0e0e0e;
+      margin-bottom: 5px;
+      font-weight: bold;
+    }
+
+    .card-description {
+      font-size: 14px;
+      color: #ffffff;
+    }
+
+    .header-icons {
+      display: flex;
+      align-items: center;
+    }
+
+    .header-icons img {
+      width: 25px;
+      height: 25px;
+      margin-right: 5px;
+    }
+      
+  .header-icons {
+      display: flex;
+      align-items: center;
+    }
+
+    .header-icons img {
+      width: 40px;
+      height: 40px;
+      margin-right: 20px;
+    }
+  </style>
+</head>
+<body>
+    <header class="header">
+        <img class="logo" src="C:\Users\ramos\OneDrive\Área de Trabalho\prog_tcc\imgs\logo.pnglogo.jpg" alt="Logo">
+        <h1>SMA</h1>
+        <div class="header-icons">
+          <!--<a href="C:\Users\ramos\OneDrive\Área de Trabalho\prog_tcc\chat monitor.html"><img src="chat.png" alt="Ícone de Chat"></a>-->
+          <a href="C:\Users\ramos\OneDrive\Área de Trabalho\prog_tcc\telas_config\configuraçoes monitor.html"><img src="C:\Users\ramos\OneDrive\Área de Trabalho\prog_tcc\imgs\config.png" alt="Ícone de Configurações"></a>
+          <a href="C:\Users\ramos\OneDrive\Área de Trabalho\prog_tcc\telas_usuários\perfil monitor.html"><img src="C:\Users\ramos\OneDrive\Área de Trabalho\prog_tcc\imgs\perfil.png" alt="Ícone de perfil"></a>
+        </div>
+      </header>
+    
+  <h1>Exatas</h1>
+    <div class="quadradinho"style="width: 260px; height: 260px;">
+    <h2>Matemática</h2>
+    <ul>
+        <li>Álgebra</li>
+        <li>Análise</li>
+        <li>Geometria e Topologia</li>
+        <li>Matemática Aplicada</li>
+    </ul>
+</div>
+
+<div class="quadradinho"style="width: 260px; height: 260px;">
+    <h2>Probabilidade e Estatística</h2>
+    <ul>
+        <li>Probabilidade</li>
+        <li>Estatística</li>
+        <li>Probabilidade e Estatística Aplicadas</li>
+    </ul>
+</div>
+
+<div class="quadradinho" style="width: 260px; height: 260px;">
+    <h2>Ciência da Computação</h2>
+    <ul>
+        <li>Teoria da Computação</li>
+        <li>Matemática da Computação</li>
+        <li>Metodologia e Técnicas da Computação</li>
+        <li>Sistemas de Computação</li>
+    </ul>
+</div>
+
+<div class="quadradinho" style="width: 260px; height: 260px;">
+    <h2>Astronomia</h2>
+    <ul>
+        <li>Astronomia de Posição e Mecânica Celeste</li>
+        <li>Astrofísica Estelar</li>
+        <li>Astrofísica do Meio Interestelar</li>
+        <li>Astrofísica Extragaláctica</li>
+        <li>Astrofísica do Sistema Solar</li>
+        <li>Instrumentação Astronômica</li>
+    </ul>
+</div>
+
+<div class="quadradinho" style="width: 260px; height: 280px;">
+    <h2>Física</h2>
+    <ul>
+        <li>Física Geral</li>
+        <li>Áreas Clássicas de Fenomenologia e suas Aplicações</li>
+        <li>Física das Partículas Elementares e Campos</li>
+        <li>Física Nuclear</li>
+        <li>Física Atômica e Molecular</li>
+        <li>Física dos Fluídos, Física de Plasmas e Descargas Elétricas</li>
+        <li>Física da Matéria Condensada</li>
+    </ul>
+</div>
+
+<div class="quadradinho"style="width: 260px; height: 260px;">
+    <h2>Química</h2>
+    <ul>
+        <li>Química Orgânica</li>
+        <li>Química Inorgânica</li>
+        <li>Físico-Química</li>
+        <li>Química Analítica</li>
+    </ul>
+</div>
+
+<div class="quadradinho"style="width: 260px; height: 260px;">
+    <h2>Geociências</h2>
+    <ul>
+        <li>Geologia</li>
+        <li>Geofísica</li>
+        <li>Meteorologia</li>
+        <li>Geodésia</li>
+        <li>Geografia Física</li>
+    </ul>
+</div>
+
+<div class="quadradinho"style="width: 260px; height: 260px;">
+    <h2>Oceanografia</h2>
+    <ul>
+        <li>Oceanografia Biológica</li>
+        <li>Oceanografia Física</li>
+        <li>Oceanografia Química</li>
+        <li>Oceanografia Geológica</li>
+    </ul>
+</div>
+
+
+ <div class="quadradinho1"style="width: 260px; height: 260px;">
+    <h2>Genética</h2>
+    <ul>
+        <li>Genética Quantitativa</li>
+        <li>Genética Molecular e de Microorganismos</li>
+        <li>Genética Vegetal</li>
+        <li>Genética Animal</li>
+        <li>Genética Humana e Médica</li>
+        <li>Mutagênese</li>
+    </ul>
+</div>
+<div class="quadradinho1"style="width: 260px; height: 260px;">
+    <h2>Botânica</h2>
+    <ul>
+        <li>Paleobotânica</li>
+        <li>Morfologia Vegetal</li>
+        <li>Fisiologia Vegetal</li>
+        <li>Taxonomia Vegetal</li>
+        <li>Fitogeografia</li>
+        <li>Botânica Aplicada</li>
+    </ul>
+</div>
+<div class="quadradinho1"style="width: 260px; height: 280px;">
+    <h2>Zoologia</h2>
+    <ul>
+        <li>Paleozoologia</li>
+        <li>Morfologia dos Grupos Recentes</li>
+        <li>Fisiologia dos Grupos Recentes</li>
+        <li>Comportamento Animal</li>
+        <li>Taxonomia dos Grupos Recentes</li>
+        <li>Zoologia Aplicada</li>
+    </ul>
+</div>
+<div class="quadradinho1"style="width: 260px; height: 260px;">
+    <h2>Ecologia</h2>
+    <ul>
+        <li>Ecologia Teórica</li>
+        <li>Ecologia de Ecossistemas</li>
+        <li>Ecologia Aplicada</li>
+    </ul>
+</div>
+<div class="quadradinho1"style="width: 260px; height: 260px;">
+    <h2>Morfologia</h2>
+    <ul>
+        <li>Citologia e Biologia Celular</li>
+        <li>Embriologia</li>
+        <li>Histologia</li>
+        <li>Anatomia</li>
+    </ul>
+</div>
+<div class="quadradinho1"style="width: 260px; height: 260px;">
+    <h2>Fisiologia</h2>
+    <ul>
+        <li>Fisiologia Geral</li>
+        <li>Fisiologia de Orgãos e Sistemas</li>
+        <li>Fisiologia do Esforço</li>
+        <li>Fisiologia Comparada</li>
+    </ul>
+</div>
+<div class="quadradinho1"style="width: 260px; height: 260px;">
+    <h2>Bioquímica</h2>
+    <ul>
+        <li>Química de Macromoléculas</li>
+        <li>Bioquímica de Microorganismos</li>
+        <li>Metabolismo e Bioenergética</li>
+        <li>Biologia Molecular</li>
+        <li>Enzimologia</li>
+    </ul>
+</div>
+<div class="quadradinho1"style="width: 260px; height: 260px;">
+    <h2>Biofísica</h2>
+    <ul>
+        <li>Biofísica Molecular</li>
+        <li>Biofísica Celular</li>
+        <li>Biofísica de Processos e Sistemas</li>
+        <li>Radiologia e Fotobiologia</li>
+    </ul>
+</div>
+<div class="quadradinho1"style="width: 260px; height: 260px;">
+    <h2>Farmacologia</h2>
+    <ul>
+        <li>Farmacologia Geral</li>
+        <li>Farmacologia Autonômica</li>
+        <li>Neuropsicofarmacologia</li>
+        <li>Farmacologia Cardiorenal</li>
+        <li>Farmacologia Bioquímica e Molecular</li>
+        <li>Etnofarmacologia</li>
+        <li>Toxicologia</li>
+        <li>Farmacologia Clínica</li>
+    </ul>
+</div>
+<div class="quadradinho1"style="width: 260px; height: 260px;">
+    <h2>Imunologia</h2>
+    <ul>
+        <li>Imunoquímica</li>
+        <li>Imunologia Celular</li>
+        <li>Imunogenética</li>
+        <li>Imunologia Aplicada</li>
+    </ul>
+</div>
+<div class="quadradinho1"style="width: 260px; height: 260px;">
+    <h2>Microbiologia</h2>
+    <ul>
+        <li>Biologia e Fisiologia dos Microorganismos</li>
+        <li>Microbiologia Aplicada</li>
+    </ul>
+</div>
+<div class="quadradinho1"style="width: 260px; height: 260px;">
+    <h2>Parasitologia</h2>
+    <ul>
+        <li>Protozoologia de Parasitos</li>
+        <li>Helmintologia de Parasitos</li>
+        <li>Entomologia e Malacologia de Parasitos e Vetores</li>
+    </ul>
+</div>
+
+
+  <div class="quadradinho2"style="width: 260px; height: 260px;">
+    <h2>Engenharia civil</h2>
+    <ul>
+        <li>Construção Civil</li>
+        <li>Estruturas</li>
+        <li>Geotécnica</li>
+        <li>Engenharia Hidráulica</li>
+        <li>Infra-Estrutura de Transportes</li>
+    </ul>
+</div>
+<div class="quadradinho2"style="width: 260px; height: 260px;">
+    <h2>Engenharia de minas</h2>
+    <ul>
+        <li>Pesquisa Mineral</li>
+        <li>Lavra</li>
+        <li>Tratamento de Minérios</li>
+    </ul>
+</div>
+</div>
+<div class="quadradinho2"style="width: 260px; height: 280px;">
+    <h2>Engenharia de materiais e metalúrgica</h2>
+    <ul>
+        <li>Instalações e Equipamentos Metalúrgicos</li>
+        <li>Metalurgia Extrativa</li>
+        <li>Metalurgia de Transformação</li>
+        <li>Metalurgia Física</li>
+        <li>Materiais não-Metálicos</li>
+    </ul>
+</div>
+<div class="quadradinho2"style="width: 260px; height: 280px;">
+    <h2>Engenharia elétrica</h2>
+    <ul>
+        <li>Materiais Elétricos</li>
+        <li>Medidas Elétricas, Magnéticas e Eletrônicas; Instrumentação</li>
+        <li>Circuitos Elétricos, Magnéticos e Eletrônicos</li>
+        <li>Sistemas Elétricos de Potência</li>
+        <li>Eletrônica Industrial, Sistemas e Controles Eletrônicos</li>
+        <li>Telecomunicações</li>
+    </ul>
+</div>
+<div class="quadradinho2"style="width: 260px; height: 190px;">
+    <h2>Engenharia mecânica</h2>
+    <ul>
+        <li>Fenômenos de Transporte</li>
+        <li>Engenharia Térmica</li>
+        <li>Mecânica dos Sólidos</li>
+        <li>Projetos de Máquinas</li>
+        <li>Processos de Fabricação</li>
+    </ul>
+</div>
+ <div class="quadradinho2"style="width: 260px; height: 190px;">
+    <h2>Engenharia química</h2>
+    <ul>
+        <li>Processos Industriais de Engenharia Química</li>
+        <li>Operações Industriais e Equipamentos para Engenharia Química</li>
+        <li>Tecnologia Química</li>
+    </ul>
+</div>
+<div class="quadradinho2"style="width: 260px; height: 190px;">
+    <h2>Engenharia sanitária</h2>
+    <ul>
+        <li>Recursos Hídricos</li>
+        <li>Tratamento de Águas de Abastecimento e Residuárias</li>
+        <li>Saneamento Básico</li>
+        <li>Saneamento Ambiental</li>
+    </ul>
+</div>
+<div class="quadradinho2"style="width: 260px; height: 260px;">
+    <h2>Engenharia de produção</h2>
+    <ul>
+        <li>Gerência de Produção</li>
+        <li>Pesquisa Operacional</li>
+        <li>Engenharia do Produto</li>
+        <li>Engenharia Econômica</li>
+    </ul>
+</div>
+<div class="quadradinho2"style="width: 260px; height: 260px;">
+  <h2>Engenharia nuclear</h2>
+  <ul>
+      <li>Aplicações de Radioisótopos</li>
+      <li>Fusão Controlada</li>
+      <li>Combustível Nuclear</li>
+      <li>Tecnologia de Reatores</li>
+  </ul>
+</div>
+<div class="quadradinho2"style="width: 260px; height: 260px;">
+  <h2>Engenharia nuclear</h2>
+  <ul>
+    <li>Aplicações de Radioisótopos</li>
+    <li>Fusão Controlada</li>
+    <li>Combustível Nuclear</li>
+    <li>Tecnologia de Reatores</li>
+  </ul>
+</div>
+
+<div class="quadradinho2"style="width: 260px; height: 260px;">
+  <h2>Engenharia de transportes</h2>
+  <ul>
+    <li> Planejamento de Transportes</li>
+    <li> Veículos e Equipamentos de Controle</li>
+    <li>Operações de Transportes</li>
+  </ul>
+</div>
+
+<div class="quadradinho2"style="width: 260px; height: 260px;">
+  <h2>Engenharia naval e oceânica</h2>
+  <ul>
+    <li> Hidrodinâmica de Navios e Sistemas Oceânicos</li>
+    <li> Estruturas Navais e Oceânicas</li>
+    <li>Máquinas Marítimas</li>
+    <li> Projetos de Navios e de Sistemas Oceânicos</li>
+    <li> Tecnologia de Construção Naval e de Sistemas Oceânicos</li>
+  </ul>
+</div>
+
+<div class="quadradinho2"style="width: 260px; height: 260px;">
+  <h2>Engenharia aeroespacial</h2>
+  <ul>
+    <li> Aerodinâmica</li>
+    <li> Dinâmica de Vôo</li>
+    <li> Estruturas Aeroespaciais</li>
+    <li>Materiais e Processos para Engenharia Aeronáutica e Aeroespacial</li>
+    <li> Propulsão Aeroespacial</li>
+    <li>Sistemas Aeroespaciais</li>
+  </ul>
+</div>
+
+<div class="quadradinho2"style="width: 260px; height: 260px;">
+  <h2>Engenharia biomédica</h2>
+  <ul>
+    <li>Bioengenharia</li>
+    <li>Engenharia Médica</li>
+  </ul>
+</div>
+
+
+
+
+
+<div class="quadradinho3"style="width: 260px; height: 260px;">
+  <h2>Medicina</h2>
+  <ul>
+    <li>Clínica Médica</li>
+    <li>Cirurgia</li>
+    <li>Saúde Materno-Infantil</li>
+    <li>Psiquiatria</li>
+    <li>Anatomia Patológica e Patologia Clínica</li>
+    <li>Radiologia Médica</li>
+    <li>Medicina Legal e Deontologia</li>
+  </ul>
+</div>
+
+<div class="quadradinho3"style="width: 260px; height: 260px;">
+  <h2>Odontologia</h2>
+  <ul>
+    <li>Clínica Odontológica</li>
+    <li>Cirurgia Buco-Maxilo-Facial</li>
+    <li>Ortodontia</li>
+    <li>Odontopediatria</li>
+    <li>Periodontia</li>
+    <li>Endodontia</li>
+    <li>Radiologia Odontológica</li>
+    <li>Odontologia Social e Preventiva</li>
+    <li>Materiais Odontológicos</li>
+  </ul>
+</div>
+
+<div class="quadradinho3"style="width: 260px; height: 260px;">
+  <h2>Farmácia</h2>
+  <ul>
+    <li>Farmacotecnia</li>
+    <li>Farmacognosia</li>
+    <li>Análise Toxicológica</li>
+    <li>Análise e Controle de Medicamentos</li>
+    <li>Bromatologia</li>
+  </ul>
+</div>
+
+<div class="quadradinho3"style="width: 260px; height: 260px;">
+  <h2>Enfermagem</h2>
+  <ul>
+    <li>Enfermagem Médico-Cirúrgica</li>
+    <li>Enfermagem Obstétrica</li>
+    <li>Enfermagem Pediátrica</li>
+    <li>Enfermagem Psiquiátrica</li>
+    <li>Enfermagem de Doenças Contagiosas</li>
+    <li>Enfermagem de Saúde Pública</li>
+  </ul>
+</div>
+
+<div class="quadradinho3"style="width: 260px; height: 260px;">
+  <h2>Nutrição</h2>
+  <ul>
+    <li>Bioquímica da Nutrição</li>
+    <li>Dietética</li>
+    <li>Análise Nutricional de População</li>
+    <li>Desnutrição e Desenvolvimento Fisiológico</li>
+  </ul>
+</div>
+
+<div class="quadradinho3"style="width: 260px; height: 260px;">
+  <h2>Saúde coletiva</h2>
+  <ul>
+    <li>Epidemiologia</li>
+    <li>Saúde Pública</li>
+    <li>Medicina Preventiva</li>
+  </ul>
+</div>
+
+<div class="quadradinho3"style="width: 260px; height: 260px;">
+  <h2>Fonoaudiologia</h2>
+</div>
+
+<div class="quadradinho3"style="width: 260px; height: 260px;">
+  <h2>Fisioterapia e terapia ocupacional</h2>
+</div>
+
+<div class="quadradinho3"style="width: 260px; height: 260px;">
+  <h2>Educação física</h2>
+</div>
+
+
+<div class="quadradinho4" style="width: 260px; height: 260px;">
+  <h2>Agronomia</h2>
+  <ul>
+    <li>Ciência do Solo</li>
+    <li>Fitossanidade</li>
+    <li>Fitotecnia</li>
+    <li>Floricultura, Parques e Jardins</li>
+    <li>Agrometeorologia</li>
+    <li>Extensão Rural</li>
+  </ul>
+</div>
+
+<div class="quadradinho4" style="width: 260px; height: 260px;">
+  <h2>Recursos florestais e engenharia florestal</h2>
+  <ul>
+    <li>Silvicultura</li>
+    <li>Manejo Florestal</li>
+    <li>Técnicas e Operações Florestais</li>
+    <li>Tecnologia e Utilização de Produtos Florestais</li>
+    <li>Conservação da Natureza</li>
+    <li>Energia de Biomassa Florestal</li>
+  </ul>
+</div>
+
+<div class="quadradinho4" style="width: 260px; height: 260px;">
+  <h2>Engenharia agrícola</h2>
+  <ul>
+    <li>Máquinas e Implementos Agrícolas</li>
+    <li>Engenharia de Água e Solo</li>
+    <li>Engenharia de Processamento de Produtos Agrícolas</li>
+    <li>Construções Rurais e Ambiência</li>
+    <li>Energização Rural</li>
+  </ul>
+</div>
+
+<div class="quadradinho4" style="width: 260px; height: 260px;">
+  <h2>Zootecnia</h2>
+  <ul>
+    <li>Ecologia dos Animais Domésticos e Etologia</li>
+    <li>Genética e Melhoramento dos Animais Domésticos</li>
+    <li>Nutrição e Alimentação Animal</li>
+    <li>Pastagem e Forragicultura</li>
+    <li>Produção Animal</li>
+  </ul>
+</div>
+
+<div class="quadradinho4" style="width: 260px; height: 260px;">
+  <h2>Medicina veterinária</h2>
+  <ul>
+    <li>Clínica e Cirurgia Animal</li>
+    <li>Medicina Veterinária Preventiva</li>
+    <li>Patologia Animal</li>
+    <li>Reprodução Animal</li>
+    <li>Inspeção de Produtos de Origem Animal</li>
+  </ul>
+</div>
+
+<div class="quadradinho4" style="width: 260px; height: 260px;">
+  <h2>Recursos pesqueiros e engenharia de pesca</h2>
+  <ul>
+    <li>Recursos Pesqueiros Marinhos</li>
+    <li>Recursos Pesqueiros de Águas Interiores</li>
+    <li>Aquicultura</li>
+    <li>Engenharia de Pesca</li>
+  </ul>
+</div>
+
+<div class="quadradinho4" style="width: 260px; height: 260px;">
+  <h2>Ciência e tecnologia de alimentos</h2>
+  <ul>
+    <li>Ciência de Alimentos</li>
+    <li>Tecnologia de Alimentos</li>
+    <li>Engenharia de Alimentos</li>
+  </ul>
+</div>
+
+
+
+
+<div class="quadradinho5" style="width: 260px; height: 260px;">
+  <h2>Direito</h2>
+  <ul>
+    <li>Teoria do Direito</li>
+    <li>Direito Público</li>
+    <li>Direito Privado</li>
+    <li>Direitos Especiais</li>
+  </ul>
+</div>
+
+<div class="quadradinho5" style="width: 260px; height: 260px;">
+  <h2>Administração</h2>
+  <ul>
+    <li>Administração de Empresas</li>
+    <li>Administração Pública</li>
+    <li>Administração de Setores Específicos</li>
+    <li>Ciências Contábeis</li>
+  </ul>
+</div>
+
+<div class="quadradinho5" style="width: 260px; height: 260px;">
+  <h2>Economia</h2>
+  <ul>
+    <li>Teoria Econômica</li>
+    <li>Métodos Quantitativos em Economia</li>
+    <li>Economia Monetária e Fiscal</li>
+    <li>Crescimento, Flutuações e Planejamento Econômico</li>
+    <li>Economia Internacional</li>
+    <li>Economia de Recursos Humanos</li>
+    <li>Economia Industrial</li>
+    <li>Economia do Bem-Estar Social</li>
+    <li>Economia Regional e Urbana</li>
+    <li>Economia Agrária e dos Recursos Naturais</li>
+  </ul>
+</div>
+
+<div class="quadradinho5" style="width: 260px; height: 260px;">
+  <h2>Arquitetura e urbanismo</h2>
+  <ul>
+    <li>Fundamentos de Arquitetura e Urbanismo</li>
+    <li>Projetos de Arquitetura e Urbanismo</li>
+    <li>Tecnologia de Arquitetura e Urbanismo</li>
+    <li>Paisagismo</li>
+  </ul>
+</div>
+
+<div class="quadradinho5" style="width: 260px; height: 260px;">
+  <h2>Planejamento urbano e regional</h2>
+  <ul>
+    <li>Fundamentos do Planejamento Urbano e Regional</li>
+    <li>Metodos e Técnicas do Planejamento Urbano e Regional</li>
+    <li>Serviços Urbanos e Regionais</li>
+  </ul>
+</div>
+
+<div class="quadradinho5" style="width: 260px; height: 260px;">
+  <h2>Demografia</h2>
+  <ul>
+    <li>Componentes da Dinâmica Demográfica</li>
+    <li>Nupcialidade e Família</li>
+    <li>Demografia Histórica</li>
+    <li>Política Pública e População</li>
+    <li>Fontes de Dados Demográficos</li>
+  </ul>
+</div>
+
+<div class="quadradinho5" style="width: 260px; height: 260px;">
+  <h2>Ciência da informação</h2>
+  <ul>
+    <li>Teoria da Informação</li>
+    <li>Biblioteconomia</li>
+    <li>Arquivologia</li>
+  </ul>
+</div>
+
+<div class="quadradinho5" style="width: 260px; height: 260px;">
+  <h2>Museologia</h2>
+</div>
+
+<div class="quadradinho5" style="width: 260px; height: 260px;">
+  <h2>Comunicação</h2>
+  <ul>
+    <li>Teoria da Comunicação</li>
+    <li>Jornalismo e Editoração</li>
+    <li>Rádio e Televisão</li>
+    <li>Relações Públicas e Propaganda</li>
+    <li>Comunicação Visual</li>
+  </ul>
+</div>
+
+<div class="quadradinho5" style="width: 260px; height: 260px;">
+  <h2>Serviço social</h2>
+  <ul>
+    <li>Fundamentos do Serviço Social</li>
+    <li>Serviço Social Aplicado</li>
+  </ul>
+</div>
+
+<div class="quadradinho5" style="width: 260px; height: 260px;">
+  <h2>Economia doméstica</h2>
+</div>
+
+<div class="quadradinho5" style="width: 260px; height: 260px;">
+  <h2>Desenho industrial</h2>
+  <ul>
+    <li>Programação Visual</li>
+    <li>Desenho de Produto</li>
+  </ul>
+</div>
+
+<div class="quadradinho5" style="width: 260px; height: 260px;">
+  <h2>Turismo</h2>
+</div>
+
+
+<div class="quadradinho6" style="width: 260px; height: 260px;">
+  <h2>Filosofia</h2>
+  <ul>
+    <li>História da Filosofia</li>
+    <li>Metafísica</li>
+    <li>Lógica</li>
+    <li>Ética</li>
+    <li>Epistemologia</li>
+    <li>Filosofia Brasileira</li>
+  </ul>
+</div>
+
+<div class="quadradinho6" style="width: 260px; height: 260px;">
+  <h2>Sociologia</h2>
+  <ul>
+    <li>Fundamentos da Sociologia</li>
+    <li>Sociologia do Conhecimento</li>
+    <li>Sociologia do Desenvolvimento</li>
+    <li>Sociologia Urbana</li>
+    <li>Sociologia Rural</li>
+    <li>Sociologia da Saúde</li>
+    <li>Outras Sociologias Específicas</li>
+  </ul>
+</div>
+
+<div class="quadradinho6" style="width: 260px; height: 260px;">
+  <h2>Antropologia</h2>
+  <ul>
+    <li>Teoria Antropológica</li>
+    <li>Etnologia Indígena</li>
+    <li>Antropologia Urbana</li>
+    <li>Antropologia Rural</li>
+    <li>Antropologia das Populações Afro-Brasileiras</li>
+  </ul>
+</div>
+
+<div class="quadradinho6" style="width: 260px; height: 260px;">
+  <h2>Arqueologia</h2>
+  <ul>
+    <li>Teoria e Método em Arqueologia</li>
+    <li>Arqueologia Pré-Histórica</li>
+    <li>Arqueologia Histórica</li>
+  </ul>
+</div>
+
+<div class="quadradinho6" style="width: 260px; height: 260px;">
+  <h2>História</h2>
+  <ul>
+    <li>Teoria e Filosofia da História</li>
+    <li>História Antiga e Medieval</li>
+    <li>História Moderna e Contemporânea</li>
+    <li>História da América</li>
+    <li>História do Brasil</li>
+    <li>História das Ciências</li>
+  </ul>
+</div>
+
+<div class="quadradinho6" style="width: 260px; height: 260px;">
+  <h2>Geografia</h2>
+  <ul>
+    <li>Geografia Humana</li>
+    <li>Geografia Regional</li>
+  </ul>
+</div>
+
+<div class="quadradinho6" style="width: 300px; height: 325px;">
+  <h2>Psicologia</h2>
+  <ul>
+    <li>Fundamentos e Medidas da Psicologia</li>
+    <li>Psicologia Experimental</li>
+    <li>Psicologia Fisiológica</li>
+    <li>Psicologia Comparativa</li>
+    <li>Psicologia Social</li>
+    <li>Psicologia Cognitiva</li>
+    <li>Psicologia do Desenvolvimento Humano</li>
+    <li>Psicologia do Ensino e da Aprendizagem</li>
+    <li>Psicologia do Trabalho e Organizacional</li>
+    <li>Tratamento e Prevenção Psicológica</li>
+  </ul>
+</div>
+
+<div class="quadradinho6" style="width: 260px; height: 260px;">
+  <h2>Educação</h2>
+  <ul>
+    <li>Fundamentos da Educação</li>
+    <li>Administração Educacional</li>
+    <li>Planejamento e Avaliação Educacional</li>
+    <li>Ensino-Aprendizagem</li>
+    <li>Currículo</li>
+    <li>Orientação e Aconselhamento</li>
+    <li>Tópicos Específicos de Educação</li>
+  </ul>
+</div>
+
+<div class="quadradinho6" style="width: 260px; height: 260px;">
+  <h2>Ciência política</h2>
+  <ul>
+    <li>Teoria Política</li>
+    <li>Estado e Governo</li>
+    <li>Comportamento Político</li>
+    <li>Políticas Públicas</li>
+    <li>Política Internacional</li>
+  </ul>
+</div>
+
+<div class="quadradinho6" style="width: 260px; height: 260px;">
+  <h2>Teologia</h2>
+  <ul>
+    <li>História da Teologia</li>
+    <li>Teologia Moral</li>
+    <li>Teologia Sistemática</li>
+    <li>Teologia Pastoral</li>
+  </ul>
+</div>
+
+
+
+
+<div class="quadradinho7" style="width: 260px; height: 260px;">
+  <h2>Linguística</h2>
+  <ul>
+    <li>Teoria e Análise Linguística</li>
+    <li>Filosofia da Linguagem</li>
+    <li>Linguística Histórica</li>
+    <li>Sociolinguística e Dialetologia</li>
+    <li>Psicolinguística</li>
+    <li>Linguística Aplicada</li>
+  </ul>
+</div>
+
+<div class="quadradinho7" style="width: 260px; height: 280px;">
+  <h2>Letras</h2>
+  <ul>
+    <li>Língua Portuguesa</li>
+    <li>Línguas Estrangeiras Modernas</li>
+    <li>Línguas Clássicas</li>
+    <li>Línguas Indígenas</li>
+    <li>Teoria Literária</li>
+    <li>Literatura Brasileira</li>
+    <li>Outras Literaturas Vernáculas</li>
+    <li>Literaturas Estrangeiras Modernas</li>
+    <li>Literaturas Clássicas</li>
+    <li>Literatura Comparada</li>
+  </ul>
+</div>
+
+<div class="quadradinho7" style="width: 260px; height: 260px;">
+  <h2>Artes</h2>
+  <ul>
+    <li>Fundamentos e Críticas das Artes</li>
+    <li>Artes Plásticas</li>
+    <li>Música</li>
+    <li>Dança</li>
+    <li>Teatro</li>
+    <li>Ópera</li>
+    <li>Fotografia</li>
+    <li>Cinema</li>
+    <li>Artes do Vídeo</li>
+    <li>Educação Artística</li>
+  </ul>
+</div>
+
+</body>
+</html>
